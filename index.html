@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AstroWeight</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body>
+  <h1>Astroweight Calculator</h1>
+  <div ng-app='app'>
+    <div ng-controller='Calc as Calc'>
+
+  <input type="number" ng-model='Calc.userweight'></input>
+
+  <select ng-model="Calc.plan" ng-options="planets[0] for planets in Calc.planets">
+	</select>
+
+  <button ng-click='Calc.run()'>Do Math</button>
+
+  <p >{{Calc.total}}</p>
+
+
+</div>
+</div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</body>
+
+<footer>
+</footer>
+
+</html>
